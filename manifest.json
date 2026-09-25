@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "daikinsplit",
+  "name": "Daikin Mini Split",
+  "version": "1.0.0",
+  "author": "keylimesoda",
+  "description": "Daikin BRP072A43 mini-split controller: power, mode, temperature, fan, swing, live sensors (local HTTP API, no cloud). Auto-discovers the adapter on your LAN.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Daikin Mini Split",
+    "description": "Control the Daikin mini-split: power, mode, setpoint, fan, swing, live sensors. The adapter is found by a local-subnet scan on first run. Right-click toggles power.",
+    "category": "Smart Home",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "deviceIp": "",
+      "units": "f"
+    },
+    "schema": [
+      {
+        "key": "deviceIp",
+        "type": "string",
+        "label": "Device IP",
+        "description": "Optional. Leave empty to auto-discover the adapter on the local subnet (recommended).",
+        "defaultValue": ""
+      },
+      {
+        "key": "units",
+        "type": "enum",
+        "label": "Temperature units",
+        "description": "Display units for setpoints and sensors.",
+        "options": [
+          "f",
+          "c"
+        ],
+        "defaultValue": "f"
+      }
+    ]
+  }
+}
