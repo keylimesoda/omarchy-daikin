@@ -11,14 +11,14 @@ documented by the [Home Assistant Daikin integration](https://www.home-assistant
 
 ## What you get
 
-- **Bar chip** — a small fan mark (it spins while the unit runs). State
-  is shown by color, keeping the taskbar clean: **grey = off, red =
-  heating, blue = cooling** (dry/fan/auto get distinct tints).
-  Right-click toggles power; left-click opens the panel.
+- **Bar chip** — a small fan mark. State is shown by color, keeping the
+  taskbar clean: **grey = off, red = heating, blue = cooling**
+  (dry/fan/auto get distinct tints). Right-click toggles power;
+  left-click opens the panel.
 - **Panel** — power switch, live indoor/outdoor/compressor readouts,
   setpoint slider (±0.5 °C buttons), mode, fan speed, swing, device
-  info, and error display. Fully keyboard-navigable like other Omarchy
-  panels.
+  info, and error display. The fan mark here spins while the unit runs.
+  Fully keyboard-navigable like other Omarchy panels.
 - **`daikin` CLI** — shipped inside the plugin (`bin/daikin`, Python 3
   stdlib only). Also usable from a terminal:
 

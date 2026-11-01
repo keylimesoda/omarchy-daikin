@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "daikinsplit",
   "name": "Daikin Mini Split",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "keylimesoda",
   "description": "Daikin BRP072A43 mini-split controller: power, mode, temperature, fan, swing, live sensors (local HTTP API, no cloud). Auto-discovers the adapter on your LAN.",
   "kinds": [

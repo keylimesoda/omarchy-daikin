@@ -909,12 +909,16 @@ Panel {
   }
 
   // Bar-sized mark.
+  // Kept still: the bar fits an iconComponent by measuring its painted bounds,
+  // and it re-measures through a child's rotation. A spinning mark therefore
+  // gets rescaled as its bounding box turns, pulsing between 12px and ~7px
+  // four times a revolution. The hero mark in the panel still spins.
   Component {
     id: fanBar
     FanMark {
       size: Style.bar.iconCanvas
       ink: root.chipInk
-      spinning: root.poweredOn
+      spinning: false
     }
   }
 
